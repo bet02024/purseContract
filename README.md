@@ -1,11 +1,16 @@
-# Thor-Contract
+## Deployed contracts on Rinkeby testnet
 
-## Deployed contracts on Fuji testnet
-- `BifrostV2` :     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  https://testnet.snowtrace.io/address/0x67185130b8Dd296c11dAeD29371CE2411e2A3182
-- `MasterOfCoin` : &nbsp;  &nbsp; &nbsp;   https://testnet.snowtrace.io/address/0x02BcB0b5B80C0D24408ff16c05454094fadA53cA
-- `ThorV2` :     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   https://testnet.snowtrace.io/address/0xb529782800e4a0feac1A01aE410E99E90c4C28AB
+Purse Manager 0x808206A19c4b87905415627169170993cc0b503e
+Token        0x5C9B76189B36B7cF063ECcb5bc6F4F47DeDa9872
 
 
 
-## BifrostV1 vs BifrostV2 (Gag Fee)
-<img src='result1.jpeg'>
+
+compile: npx hardhat compile
+
+test: npx hardhat test
+
+deploy:  npx hardhat run scripts/deploy.js --network rinkeby
+
+ 
+ 
