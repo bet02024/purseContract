@@ -1,0 +1,42 @@
+{
+  "name": "thor-contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "accounts": "npx hardhat accounts",
+    "build": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "test": "npx hardhat test",
+    "node-up": "npx hardhat node",
+    "help": "npx hardhat help",
+    "test:gas": "REPORT_GAS=true npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "deploy:test": "npx hardhat run scripts/deploy.js --network fuji",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network local",
+    "deploy:main": "npx hardhat run scripts/deploy.js --network mainnet",
+    "eslint": "npx eslint '**/*.js'",
+    "eslint:fix": "npx eslint '**/*.js' --fix",
+    "prettier": "npx prettier '**/*.{json,sol,md}' --check",
+    "prettier:fix": "npx prettier '**/*.{json,sol,md}' --write",
+    "solhint": "npx solhint 'contracts/**/*.sol'",
+    "solhint:fix": "npx solhint 'contracts/**/*.sol' --fix"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.4.0",
+    "@openzeppelin/contracts": "^4.7.0",
+    "child-process-promise": "^2.2.1",
+    "hardhat-interface-generator": "^0.0.6"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
+    "ethereum-waffle": "^3.2.0",
+    "hardhat": "^2.9.1",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.7.20"
+  }
+}
